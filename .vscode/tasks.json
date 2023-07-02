@@ -1,0 +1,18 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start website",
+            "type": "shell",
+            "command": "gulp && python3 -m http.server",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build website",
+            "type": "shell",
+            "command": "gulp"
+        }
+    ]
+}

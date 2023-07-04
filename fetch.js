@@ -1,8 +1,8 @@
 fetch()
 
 function fetch() {
+    const urlParams = new URLSearchParams(window.location.search); 
     if (urlParams.has("token")){
-        const urlParams = new URLSearchParams(window.location.search); 
     
         var myHeaders = new Headers();
         myHeaders.append("Accept", "application/vnd.github.v3.raw");

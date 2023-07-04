@@ -1,6 +1,6 @@
-fetch()
+submit()
 
-function fetch() {
+function submit() {
     const urlParams = new URLSearchParams(window.location.search); 
     if (urlParams.has("token")){
     

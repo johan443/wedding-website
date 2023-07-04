@@ -6,7 +6,7 @@ function submit() {
     
         var myHeaders = new Headers();
         myHeaders.append("Accept", "application/vnd.github.v3.raw");
-        myHeaders.append("Authorization", "token  " + 'github_pat_11AQML3VI0' + urlParams.get("token"));
+        myHeaders.append("Authorization", "token  " + 'github_pat_11AQML3VI0MhgeaXNtpPSZ_nvvozyRa2qXXjeXwKTxdHJ69woyyzSwM1ClYz9z' + urlParams.get("token"));
         myHeaders.append("Cookie", "_octo=GH1.1.267893443.1688309160; logged_in=no");
     
         var requestOptions = {

@@ -23,8 +23,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icon_16.png">
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-
-    <script src="fetch.js" defer></script>
     <script>
         // load css files from CDN if local node_modules fail
         function loadCssFromCDN(css) {
@@ -424,7 +422,8 @@
                             <div class="form-input-group">
                                 <i class="fa fa-users"></i><input type="number" name="attendees" class="" min="0"
                                                                   max="4"
-                                                                  placeholder="Husband/Wife or kids"
+                                                                  placeholder="Partner and/or kids"
+                                                                  title="Set to 0 if you are unable to attend."
                                                                   required>
                             </div>
                         </div>

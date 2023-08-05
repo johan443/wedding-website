@@ -237,7 +237,7 @@ $(document).ready(function () {
             }
             
         }else{
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect. Please scan the QR code on the invite.'));
         }
     });
 

@@ -216,9 +216,9 @@ $(document).ready(function () {
         var urlParams = new URLSearchParams(window.location.search); 
         if (urlParams.has("token")){
             var md5 = MD5(urlParams.get("token"));
-            data+= `&md5=${md5}`
+            data+= "&md5=" + md5;
             if (md5 !== 'd6a661d7b2b1b0b6caab66842c422739') {
-                $('#alert-wrapper').html(alert_markup('danger', `<strong>Sorry!</strong> Your invite code is incorrect (${md5})`));
+                $('#alert-wrapper').html(alert_markup('danger', "<strong>Sorry!</strong> Your invite code is incorrect ("+ md5 +")"));
             } else {
                 $.post('https://script.google.com/macros/s/AKfycbwDAb_c7m0Y8pGF4EG2809GRSJgSixj20VFfLGkBdglesWyDpeOIVpsvESc_l5wS02M/exec', data)
                 .done(function (data) {

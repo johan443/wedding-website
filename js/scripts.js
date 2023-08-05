@@ -226,6 +226,11 @@ $(document).ready(function () {
                         if (data.result === "error") {
                             $('#alert-wrapper').html(alert_markup('danger', data.message));
                         } else {
+                            if ($('input[name="attendees"]').val() === "0"){
+                                var confirmationElement = document.getElementById("confirmation");
+                                var newHTML = "<h3>Thank you!</h3><p>It's a pity you can't be at our wedding.</p>";
+                                confirmationElement.innerHTML = newHTML;
+                            }
                             $('#alert-wrapper').html('');
                             $('#rsvp-modal').modal('show');
                         }
